@@ -13,13 +13,13 @@
 };
 
 /* colors */
-.primary-color{
+.clr-primary{
   color:#030712;
 }
-.secondary-color{
+.clr-secondary{
   color: #03071299;
 }
-.bold-color{
+.clr-bold{
   color:#1DD100;
 }
 

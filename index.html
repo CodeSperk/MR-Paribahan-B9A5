@@ -9,45 +9,95 @@
   <!-- daisyUI & tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/08fb2f18aa.js" crossorigin="anonymous"></script>
 
   <!-- custom styles -->
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
-<body>
-  <header class="max-w-7xl mx-auto bg-green-400 p-5 md:p-10 xl:p-14">
-Linntorinctio nemo laboriosam esse, autem voluptatibus odio repudiandae dollorem20
-Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint facere aspernatur sapiente nobis sunt dolor tempore repellat nisi sed praesentium!
-aepe earum, doloremque sit eveniet porro qui voluptatum unde.
+<body class="clr-primary font-inter text-sm lg:text-base">
+  <!-- header
+  =============== -->
+  <header class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14">
+    <!-- navbar
+    ------------ -->
+    <nav class=" mt-8 lg:mt-12 mb-6 lg:mb-10 font-raleway">
+      <div class="navbar bg-base-100 -ml-1">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="light-bg clr-bold py-2 lg:py-3 px-5 lg:px-7 rounded-md border border-[#1dd10066] hover:bg-green-200 mr-2 lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 lg:text-lg font-medium clr-secondary">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="text-xl md:text-2xl lg:text-4xl font-bold hidden md:flex">MR Paribahan</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal lg:text-base px-1 font-medium clr-secondary">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <span class="-mr-2 light-bg clr-bold py-2 lg:py-3 px-5 lg:px-7 flex items-center gap-2 rounded-xl border border-[#1dd10066] hover:bg-green-200">
+            <p class="text-lg lg:text-xl font-bold">Bus</p>
+          <img src="./resources/bus-icon.png" alt="">
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner Section -->
+    <section class="relative">
+      <img src="./resources/banner.png" alt="" class="w-full min-h-[300px]">
+      
+      <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-20 rounded-3xl">
+        <div class="text-center px-4 lg:px-8">
+          <h1 class="text-4xl lg:text-5xl font-raleway font-extrabold text-white leading-snug lg:leading-snug">Travel Seamlessly with <br> <span class="clr-bold">MR Paribahan</span></h1>
+          <p class="text-base lg:text-lg text-white mt-2 max-w-[590px] mx-auto">Effortlessly explore your destinations with MR Paribahan, ensuring a smooth and seamless travel experience for all your journeys.</p>
+          <button class="bold-bg hover:bg-green-600 py-3 lg:py-3 px-5 lg:px-7 rounded-lg lg:text-lg font-bold mt-6 lg:mt-8 font-raleway">Buy Tickets</button>
+        </div>
+      </div>
+    </section>
+
   </header>
+
+  <!-- main
+  ================= -->
   <main>
     <!-- Best Offer Section
     ------------------------- -->
-    <section class="max-w-7xl mx-auto bg-green-400 p-5 md:p-10 xl:p-14 mt-20 lg:mt-28">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae excepturi numquam dolore voluptate id doloribus sunt aspernatur placeat amet.
+    <section class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14 mt-20 lg:mt-28">
+      
     </section>
-    
-    
-    <!-- Paribahan Section -->
-    <section class="bg-green-50 max-w-[1440px] mx-auto">
-      <div class="max-w-7xl mx-auto bg-green-400 p-5 md:p-10 xl:p-14 mt-20 lg:mt-28">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero doloribus ipsam architecto commodi maiores rem neque facere officiis impedit culpa?
-      </div>
 
+
+    <!-- Paribahan Section 
+    ------------------------ -->
+    <section class="bg-green-50 max-w-[1440px] mx-auto">
+      <div class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14 mt-20 lg:mt-28">
+        
+      </div>
     </section>
 
   </main>
+
+
+  <!-- footer
+  ================ -->
   <footer class="bg-[#030712] py-20 lg:py-28 ">
-<div class="max-w-7xl mx-auto bg-green-400 p-5 md:p-10 xl:p-14 text-white">
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates incidunt id, velit omnis libero ex repellendus earum harum impedit amet asperiores praesentium dolores labore tenetur odio quisquam aliquam. Sunt possimus libero accusantium fugiat itaque commodi excepturi. Nihil tempore quod ipsam. Iure, magni quos! A possimus inventore nulla voluptatum autem ut!
-</div>
+    <div class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14 text-white">
+      
+    </div>
   </footer>
-
-
-
-
-
-
   <script src="./script/script.js"></script>
 </body>
 
