@@ -21,7 +21,6 @@
 }
 .clr-bold{
   color:#1DD100;
-  
 }
 
 /* backgrounds */
@@ -30,4 +29,26 @@
 }
 .light-bg{
   background-color: #1dd10026;
+}
+.seat-style{
+  grid-column:span 2;
+  background-color: #F7F8F8;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+
+}
+.seat-style:hover{
+  background-color: #cafac3;
+  color:#1DD100;
+}
+@media only screen and (max-width: 1023px) {
+  .seat-style{
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 16px;  
+  }
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MR Paribahan</title>
+  <title>E-Ticket</title>
 
   <!-- daisyUI & tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -38,7 +38,7 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="text-xl md:text-2xl lg:text-4xl font-bold hidden md:flex">MR Paribahan</a>
+          <a class="text-xl md:text-2xl lg:text-4xl font-bold hidden md:flex">E-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal lg:text-base px-1 font-medium clr-secondary">
@@ -181,9 +181,9 @@
         <p class="clr-secondary md:text-lg max-w-3xl mx-auto mt-4 p-4 md:p-10">Purchase your tickets hassle-free from
           the MR Paribahan section, your go-to destination for convenient and reliable bus ticket bookings.</p>
 
-          <!-- coach details and per ticket Price section added -->
+        <!-- coach details and per ticket Price section added -->
         <section class="bg-white flex rounded-2xl">
-        <!-- Coach Details -->
+          <!-- Coach Details -->
           <div class="flex-1 p-4 lg:p-8">
             <div class="flex justify-between">
               <div class="flex items-center gap-3">
@@ -198,7 +198,7 @@
               <!-- remaining seats -->
               <div class="light-bg clr-bold p-1
                lg:p-3 flex items-center gap-2 rounded-xl border border-[#1dd10066] font-medium text-sm md:text-lg">
-                
+
                 <img src="./resources/seat-green.png" alt="">
                 <p><span>40</span> Seats left</p>
               </div>
@@ -212,7 +212,8 @@
                 <p>Departure Time</p>
                 <p class="clr-primary font-semibold">9:00 PM</p>
               </div>
-              <div class="text-sm lg:text-base flex flex-col md:flex-row gap-4 justify-center mt-5 clr-primary font-semibold">
+              <div
+                class="text-sm lg:text-base flex flex-col md:flex-row gap-4 justify-center mt-5 clr-primary font-semibold">
                 <div class="bg-[#0307120d] p-4 rounded-xl">Dropping Point - Bogura</div>
                 <div class="bg-[#0307120d] p-4 rounded-xl">Est. Time - 11 Hour</div>
                 <div class="bg-[#0307120d] p-4 rounded-xl">Boarding Point - Laxmipur</div>
@@ -220,7 +221,7 @@
             </div>
 
 
-            
+
           </div>
 
 
@@ -238,7 +239,190 @@
         </section>
 
 
+        <!-- Seat selection section -->
+        <section class="bg-white rounded-2xl p-4 lg:p-8  mt-6 flex flex-col md:flex-row justify-between gap-4 lg:gap-8">
+          <div class="flex-1">
+            <h4 class="text-xl md:text-2xl font-semibold clr-primary border-b-2 border-dashed pb-6 text-start">Select
+              Your Seat</h4>
+            <div class="mt-6 flex justify-between border-b-2 border-dashed pb-4">
+              <div class="flex items-center">
+                <img src="./resources/seat-gray.png" alt="">
+                <span class="md:text-lg font-medium clr-secondary ml-2">Available</span>
+              </div>
+
+              <div class="flex items-center">
+                <img src="./resources/seat-green.png" alt="">
+                <span class="md:text-lg font-medium clr-bold ml-2">Selected</span>
+              </div>
+
+            </div>
+
+            <!-- seats -->
+            <div class="grid gap-2 lg:gap-4 grid-cols-10 text-[#03071280] items-center justify-between mt-6">
+              <span class="col-span-8"></span>
+              <span
+                class="bg-[#F7F8F8] col-span-2 rounded-lg py-2.5 lg:py-3 px-4 lg:px-6 flex justify-center items-center"><img
+                  src="./resources/steering-wheel.svg" alt="" class="w-6"></span>
+
+
+              <span class="font-medium text-lg">A</span>
+              <span id="A1" class="seat-style">A1</span>
+              <span id="A2" class="seat-style">A2</span>
+              <span></span>
+              <span id="A3" class="seat-style">A3</span>
+              <span id="A4" class="seat-style">A4</span>
+
+              <span class="font-medium text-lg">B</span>
+              <span id="B1" class="seat-style">B1</span>
+              <span id="B2" class="seat-style">B2</span>
+              <span></span>
+              <span id="B3" class="seat-style">B3</span>
+              <span id="B4" class="seat-style">B4</span>
+
+              <span class="font-medium text-lg">C</span>
+              <span id="C1" class="seat-style">C1</span>
+              <span id="C2" class="seat-style">C2</span>
+              <span></span>
+              <span id="C3" class="seat-style">C3</span>
+              <span id="C4" class="seat-style">C4</span>
+
+              <span class="font-medium text-lg">D</span>
+              <span id="D1" class="seat-style">D1</span>
+              <span id="D2" class="seat-style">D2</span>
+              <span></span>
+              <span id="D3" class="seat-style">D3</span>
+              <span id="D4" class="seat-style">D4</span>
+
+              <span class="font-medium text-lg">E</span>
+              <span id="E1" class="seat-style">E1</span>
+              <span id="E2" class="seat-style">E2</span>
+              <span></span>
+              <span id="E3" class="seat-style">E3</span>
+              <span id="E4" class="seat-style">E4</span>
+
+              <span class="font-medium text-lg">F</span>
+              <span id="F1" class="seat-style">F1</span>
+              <span id="F2" class="seat-style">F2</span>
+              <span></span>
+              <span id="F3" class="seat-style">F3</span>
+              <span id="F4" class="seat-style">F4</span>
+
+              <span class="font-medium text-lg">G</span>
+              <span id="G1" class="seat-style">G1</span>
+              <span id="G2" class="seat-style">G2</span>
+              <span></span>
+              <span id="G3" class="seat-style">G3</span>
+              <span id="G4" class="seat-style">G4</span>
+
+              <span class="font-medium text-lg">H</span>
+              <span id="H1" class="seat-style">H1</span>
+              <span id="H2" class="seat-style">H2</span>
+              <span></span>
+              <span id="H3" class="seat-style">H3</span>
+              <span id="H4" class="seat-style">H4</span>
+
+              <span class="font-medium text-lg">I</span>
+              <span id="I1" class="seat-style">I1</span>
+              <span id="I2" class="seat-style">I2</span>
+              <span></span>
+              <span id="I3" class="seat-style">I3</span>
+              <span id="I4" class="seat-style">I4</span>
+
+              <span class="font-medium text-lg">J</span>
+              <span id="J1" class="seat-style">J1</span>
+              <span id="J2" class="seat-style">J2</span>
+              <span></span>
+              <span id="J3" class="seat-style">J3</span>
+              <span id="J4" class="seat-style">J4</span>
+
+
+
+            </div>
+
+          </div>
+          <!-- cart
+------------- -->
+          <div class="md:pl-4 lg:pl-8 md:w-2/5 md:border-l-2 border-dashed">
+            <h4 class="text-xl md:text-2xl font-semibold clr-primary border-b-2 border-dashed pb-6 text-start">Select
+              Your Seat</h4>
+
+            <div class="bg-[#F7F8F8] mt-6 p-4 lg:p-8">
+
+              <!-- booked title -->
+              <div class="font-medium flex justify-between text-base">
+                <span>Seat <sup class="bg-[#1DD100] px-2 rounded-sm text-xs text-white">2</sup></span>
+                <span>Class</span>
+                <span>Price</span>
+              </div>
+
+              <!-- booked seats -->
+              <div class="font-medium flex justify-between text-base clr-secondary border-b-2 pb-4">
+
+
+              </div>
+              <!-- total Price -->
+              <div class="font-medium flex justify-between text-base mt-4">
+                <span>Total Price</span>
+                <span>BDT 0.00</span>
+              </div>
+
+              <!-- coupon input -->
+              <div class="mt-4 relative">
+                <input type="text" placeholder="Have any coupon?" class="w-full p-4 lg:p-5 rounded-xl">
+                <button
+                  class="bold-bg py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg text-white font-medium absolute right-2 top-1/2 transform -translate-y-1/2">Apply</button>
+              </div>
+
+              <!-- Grand Price -->
+              <div class="font-medium flex justify-between text-base mt-4">
+                <span>Grand Price</span>
+                <span>BDT 0.00</span>
+              </div>
+
+            </div>
+
+            <div class="mt-6 text-start">
+              <!-- Passengers Name -->
+              <label for="name" class="font-semibold">Passengers Name*</label>
+              <input type="text" placeholder="Enter your name" id="name" name="name"
+                class="w-full p-4 border mt-4 rounded-xl text-base">
+            </div>
+
+            <!-- Phone Number -->
+            <div class="text-start mt-6">
+              <label for="number" class="font-semibold">Phone Number*</label>
+              <input type="number" placeholder="Enter your phone number" id="number" name="number"
+                class="w-full p-4 border mt-4 rounded-xl text-base">
+            </div>
+
+            <!-- Email ID -->
+            <div class="text-start mt-6">
+              <label for="email" class="font-semibold ">Email ID</label>
+              <input type="email" placeholder="Enter your email id" id="email" name="email"
+                class="w-full p-4 border mt-4 rounded-xl text-base">
+            </div>
+
+            <button
+              class="bold-bg text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl hover:bg-green-600">Next</button>
+
+            <!-- terms & conditions -->
+            <div class="flex justify-around mt-6 clr-secondary">
+              <a href="#" class="underline hover:text-black">Terms and Conditions</a>
+              <a href="#" class="underline hover:text-black">Cancellation Policy</a>
+            </div>
+
+          </div>
+
+
+
       </div>
+
+      </div>
+
+    </section>
+
+
+    </div>
     </section>
 
   </main>
@@ -248,7 +432,27 @@
   ================ -->
   <footer class="bg-[#030712] py-20 lg:py-28 ">
     <div class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14 text-white">
+      <div class="flex justify-between border-b-2 border-dashed pb-6 lg:pb-10">
+        <div class="">
+          <h2 class="text-3xl md:text-4xl">E-Ticket</h2>
+          <p class="opacity-80 md:text-lg mt-4">E-Ticket: Enhancing Your Daily Commute <br> through Digital Innovation.</p>
+        </div>
+        <div>
+          <h4 class="text-lg md:text-xl">Download our app</h4>
+          <img src="./resources/google-play.svg" alt="" class="w-48 h-auto mt-4">
+        </div>
 
+      </div>
+
+      <!-- bottom part -->
+      <div class="mt-6 lg:mt-8 md:flex flex-row-reverse justify-between">
+        <div class="flex gap-4 font-medium">
+          <a href="#" class="hover:text-slate-300">Terms & Conditions</a>
+          <a href="#" class="hover:text-slate-300">Return & refund policy</a>
+          <a href="#" class="hover:text-slate-300">Privacy policy</a>
+        </div>
+        <p class="opacity-70 text-center mt-6 md:mt-0 md:text-start"> @all rights reserved, E-Ticket services limited.2024</p>
+      </div>
     </div>
   </footer>
   <script src="./script/script.js"></script>
