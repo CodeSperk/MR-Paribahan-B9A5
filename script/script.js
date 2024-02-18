@@ -130,6 +130,11 @@ for (let seat of seats) {
 //to reset when click on the modal button
 const modalEl = getElById('modal-btn');
 modalEl.addEventListener('click', function(){
+  remainingSeats = 40;
+  bookedSeat = 0;
+  totalPrice=0;
+  grandTotal=0;
+  discount=0;
 
   //to reset remaining seats
   getElById('remaining-seat').innerText = 40;
