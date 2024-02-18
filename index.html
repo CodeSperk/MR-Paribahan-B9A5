@@ -368,16 +368,21 @@
               </div>
 
               <!-- coupon input -->
-              <div class="mt-4 relative">
-                <input type="text" placeholder="Have any coupon?" class="w-full p-4 lg:p-5 rounded-xl">
-                <button
-                  class="bold-bg py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg text-white font-medium absolute right-2 top-1/2 transform -translate-y-1/2">Apply</button>
+              <div id="coupon-apply-container" class="mt-4 relative">
+                <input id="coupon-input" type="text" placeholder="Have any coupon?" class="w-full p-4 lg:p-5 rounded-xl" disabled>
+                <button id="apply-btn"
+                  class="bg-[#1DD100] enabled:hover:bg-[#5caf50] disabled:bg-opacity-30 py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg text-white font-medium absolute right-2 top-1/2 transform -translate-y-1/2" disabled >Apply</button>
+
+              </div>
+              <div id="discount-container" class="font-medium justify-between text-base mt-4 border-b pb-4 hidden">
+                <span>Discount</span>
+                <span id="discount">BDT 440</span>
               </div>
 
               <!-- Grand Price -->
               <div class="font-medium flex justify-between text-base mt-4">
                 <span>Grand Price</span>
-                <span>BDT 0.00</span>
+                <span id="grand-total">BDT 0.00</span>
               </div>
 
             </div>
@@ -392,7 +397,7 @@
             <!-- Phone Number -->
             <div class="text-start mt-6">
               <label for="number" class="font-semibold">Phone Number*</label>
-              <input type="number" placeholder="Enter your phone number" id="number" name="number"
+              <input type="number" placeholder="Enter your phone number" id="p-number" name="number"
                 class="w-full p-4 border mt-4 rounded-xl text-base">
             </div>
 
@@ -403,8 +408,8 @@
                 class="w-full p-4 border mt-4 rounded-xl text-base">
             </div>
 
-            <button
-              class="bold-bg text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl hover:bg-green-600">Next</button>
+            <button id="next-btn"
+              class="bg-[#1DD100] text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl enabled:hover:bg-green-600 disabled:bg-opacity-30" disabled>Next</button>
 
             <!-- terms & conditions -->
             <div class="flex justify-around mt-6 clr-secondary">
