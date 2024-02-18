@@ -169,7 +169,10 @@ modalEl.addEventListener('click', function(){
 
   //to clear grand total price
   getElById('grand-total').innerText = 'BDT'+' '+'0.00';
-  
+
+  //to disable next button
+  getElById('next-btn').setAttribute('disabled', 'disabled');
+
 });
 
 
