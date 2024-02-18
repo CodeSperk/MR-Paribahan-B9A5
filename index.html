@@ -266,8 +266,8 @@
 
 
               <span class="font-medium text-lg">A</span>
-              <span  class="seat-style">A1</span>
-              <span  class="seat-style">A2</span>
+              <span class="seat-style">A1</span>
+              <span class="seat-style">A2</span>
               <span></span>
               <span class="seat-style">A3</span>
               <span class="seat-style">A4</span>
@@ -356,9 +356,10 @@
               </div>
 
               <!-- booked seats -->
-              <div id="booked-seat-container" class="font-medium text-base clr-secondary border-b-2 pb-4 mt-4 space-y-4">
-              
-                
+              <div id="booked-seat-container"
+                class="font-medium text-base clr-secondary border-b-2 pb-4 mt-4 space-y-4">
+
+
 
               </div>
               <!-- total Price -->
@@ -369,9 +370,11 @@
 
               <!-- coupon input -->
               <div id="coupon-apply-container" class="mt-4 relative">
-                <input id="coupon-input" type="text" placeholder="Have any coupon?" class="w-full p-4 lg:p-5 rounded-xl" disabled>
+                <input id="coupon-input" type="text" placeholder="Have any coupon?" class="w-full p-4 lg:p-5 rounded-xl"
+                  disabled>
                 <button id="apply-btn"
-                  class="bg-[#1DD100] enabled:hover:bg-[#5caf50] disabled:bg-opacity-30 py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg text-white font-medium absolute right-2 top-1/2 transform -translate-y-1/2" disabled >Apply</button>
+                  class="bg-[#1DD100] enabled:hover:bg-[#5caf50] disabled:bg-opacity-30 py-2 lg:py-2.5 px-3 lg:px-4 rounded-lg text-white font-medium absolute right-2 top-1/2 transform -translate-y-1/2"
+                  disabled>Apply</button>
 
               </div>
               <div id="discount-container" class="font-medium justify-between text-base mt-4 border-b pb-4 hidden">
@@ -408,8 +411,9 @@
                 class="w-full p-4 border mt-4 rounded-xl text-base">
             </div>
 
-            <button id="next-btn"
-              class="bg-[#1DD100] text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl enabled:hover:bg-green-600 disabled:bg-opacity-30" disabled>Next</button>
+            <button onclick="success.showModal()" id="next-btn"
+              class="bg-[#1DD100] text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl enabled:hover:bg-green-600 disabled:bg-opacity-30"
+              disabled>Next</button>
 
             <!-- terms & conditions -->
             <div class="flex justify-around mt-6 clr-secondary">
@@ -423,13 +427,39 @@
 
       </div>
 
+
+
+
+      </div>
     </section>
 
 
-    </div>
-    </section>
+    <!-- modal
+    ------------------ -->  
+    <dialog id="success" class="modal font-roboto">
+      <div class="modal-box md:w-2/3 lg:w-1/2 max-w-5xl p-8 md:p-10 lg:p-14 text-center text-[#4A4A4A] text-lg lg:text-xl">
+        <img src="./resources/success.png" alt="" class="mx-auto w-12 md:w-20 lg:w-24">
+        <h3 class="uppercase text-[#27AE60] font-bold text-xl lg:text-2xl mt-8 lg:mt-9">success</h3>
+        <p class="font-medium mt-8 lg:mt-9">
+          Thank you for Booking Our Bus Seats.
+          We are working hard to find the best service and deals for you.
+        </p>
+        <p class="font-light my-5">
+          Shortly you will find a confirmation in your email.
+        </p>
 
-    
+
+        <div class="modal-action w-fit mx-auto">
+          <form method="dialog">
+            <!-- if there is a button, it will close the modal -->
+            <button
+              class="bg-[#27AE60] hover:bg-green-700 w-56 md:w-72 rounded-full p-2 md:p-3 lg:p-4 text-lg lg:text-xl font-semibold text-white">Continue</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+
 
   </main>
 
@@ -440,7 +470,8 @@
       <div class="flex justify-between border-b-2 border-dashed pb-6 lg:pb-10">
         <div class="">
           <h2 class="text-3xl md:text-4xl">E-Ticket</h2>
-          <p class="opacity-80 md:text-lg mt-4">E-Ticket: Enhancing Your Daily Commute <br> through Digital Innovation.</p>
+          <p class="opacity-80 md:text-lg mt-4">E-Ticket: Enhancing Your Daily Commute <br> through Digital Innovation.
+          </p>
         </div>
         <div>
           <h4 class="text-lg md:text-xl">Download our app</h4>
@@ -456,7 +487,8 @@
           <a href="#" class="hover:text-slate-300">Return & refund policy</a>
           <a href="#" class="hover:text-slate-300">Privacy policy</a>
         </div>
-        <p class="opacity-70 text-center mt-6 md:mt-0 md:text-start"> @all rights reserved, E-Ticket services limited.2024</p>
+        <p class="opacity-70 text-center mt-6 md:mt-0 md:text-start"> @all rights reserved, E-Ticket services
+          limited.2024</p>
       </div>
     </div>
   </footer>
