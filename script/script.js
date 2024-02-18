@@ -3,7 +3,7 @@ let bookedSeat = 0;
 let totalPrice = 0;
 let discount = 0;
 let grandTotal = 0;
-const coupons = ["NEW15", "Couple20"];
+const coupons = ["NEW15", "Couple 20"];
 
 //to get elements by id
 function getElById(elementId) {
