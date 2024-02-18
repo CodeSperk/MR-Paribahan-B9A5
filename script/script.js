@@ -110,9 +110,6 @@ for (let seat of seats) {
           const newGrandTotal = "BDT" + " " + grandTotal.toFixed(2);
           setElementsValue("grand-total", newGrandTotal);
         }
-
-        
-      
       });
 
 
@@ -128,6 +125,47 @@ for (let seat of seats) {
     }
   });
 }
+
+
+//to reset when click on the modal button
+const modalEl = getElById('modal-btn');
+modalEl.addEventListener('click', function(){
+
+  //to reset remaining seats
+  getElById('remaining-seat').innerText = 40;
+
+  //to reset available seats
+  seats.forEach(function(element){
+    element.classList.remove("bold-bg", "text-white");
+  })
+  
+  // to clear booked number & details seat
+  getElById('booked-seat').innerText=0;
+  getElById('booked-seat-container').innerHTML= '';
+
+  //to clear total price
+  getElById('total-price').innerText = 'BDT'+' '+'0.00';
+
+  //to disable coupon apply field (input & button)
+  const inputFieldEl =  getElById('coupon-input');
+  inputFieldEl.value = '';
+  inputFieldEl.setAttribute('disabled', 'disabled');
+  getElById('apply-btn').setAttribute('disabled', 'disabled');
+  //to remove hidden class from the input field container
+  getElById('coupon-apply-container').classList.remove('hidden');
+
+  //to clear name, number & email field
+  getElById('client-name').value='';
+  getElById('p-number').value='';
+  getElById('client-email').value='';
+
+  //to hide obtained discount field
+  getElById('discount-container').classList.add('hidden');
+
+  //to clear grand total price
+  getElById('grand-total').innerText = 'BDT'+' '+'0.00';
+  
+});
 
 
 

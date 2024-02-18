@@ -377,6 +377,7 @@
                   disabled>Apply</button>
 
               </div>
+
               <div id="discount-container" class="font-medium justify-between text-base mt-4 border-b pb-4 hidden">
                 <span>Discount</span>
                 <span id="discount">BDT 440</span>
@@ -393,7 +394,7 @@
             <div class="mt-6 text-start">
               <!-- Passengers Name -->
               <label for="name" class="font-semibold">Passengers Name*</label>
-              <input type="text" placeholder="Enter your name" id="name" name="name"
+              <input type="text" placeholder="Enter your name" id="client-name" name="name"
                 class="w-full p-4 border mt-4 rounded-xl text-base">
             </div>
 
@@ -407,7 +408,7 @@
             <!-- Email ID -->
             <div class="text-start mt-6">
               <label for="email" class="font-semibold ">Email ID</label>
-              <input type="email" placeholder="Enter your email id" id="email" name="email"
+              <input type="email" placeholder="Enter your email id" id="client-email" name="email"
                 class="w-full p-4 border mt-4 rounded-xl text-base">
             </div>
 
@@ -426,9 +427,6 @@
       </div>
 
       </div>
-
-
-
 
       </div>
     </section>
@@ -452,7 +450,7 @@
         <div class="modal-action w-fit mx-auto">
           <form method="dialog">
             <!-- if there is a button, it will close the modal -->
-            <button
+            <button id="modal-btn"
               class="bg-[#27AE60] hover:bg-green-700 w-56 md:w-72 rounded-full p-2 md:p-3 lg:p-4 text-lg lg:text-xl font-semibold text-white">Continue</button>
           </form>
         </div>
