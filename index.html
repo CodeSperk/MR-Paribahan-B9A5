@@ -200,7 +200,7 @@
                lg:p-3 flex items-center gap-2 rounded-xl border border-[#1dd10066] font-medium text-sm md:text-lg">
 
                 <img src="./resources/seat-green.png" alt="">
-                <p><span>40</span> Seats left</p>
+                <p><span id="remaining-seat">40</span> Seats left</p>
               </div>
             </div>
             <div class="bg-[#F7F8F8] p-4 md:p-6 lg:p-8 mt-6 lg:text-lg font-medium clr-secondary font-raleway">
@@ -266,74 +266,74 @@
 
 
               <span class="font-medium text-lg">A</span>
-              <span id="A1" class="seat-style">A1</span>
-              <span id="A2" class="seat-style">A2</span>
+              <span  class="seat-style">A1</span>
+              <span  class="seat-style">A2</span>
               <span></span>
-              <span id="A3" class="seat-style">A3</span>
-              <span id="A4" class="seat-style">A4</span>
+              <span class="seat-style">A3</span>
+              <span class="seat-style">A4</span>
 
               <span class="font-medium text-lg">B</span>
-              <span id="B1" class="seat-style">B1</span>
-              <span id="B2" class="seat-style">B2</span>
+              <span class="seat-style">B1</span>
+              <span class="seat-style">B2</span>
               <span></span>
-              <span id="B3" class="seat-style">B3</span>
-              <span id="B4" class="seat-style">B4</span>
+              <span class="seat-style">B3</span>
+              <span class="seat-style">B4</span>
 
               <span class="font-medium text-lg">C</span>
-              <span id="C1" class="seat-style">C1</span>
-              <span id="C2" class="seat-style">C2</span>
+              <span class="seat-style">C1</span>
+              <span class="seat-style">C2</span>
               <span></span>
-              <span id="C3" class="seat-style">C3</span>
-              <span id="C4" class="seat-style">C4</span>
+              <span class="seat-style">C3</span>
+              <span class="seat-style">C4</span>
 
               <span class="font-medium text-lg">D</span>
-              <span id="D1" class="seat-style">D1</span>
-              <span id="D2" class="seat-style">D2</span>
+              <span class="seat-style">D1</span>
+              <span class="seat-style">D2</span>
               <span></span>
-              <span id="D3" class="seat-style">D3</span>
-              <span id="D4" class="seat-style">D4</span>
+              <span class="seat-style">D3</span>
+              <span class="seat-style">D4</span>
 
               <span class="font-medium text-lg">E</span>
-              <span id="E1" class="seat-style">E1</span>
-              <span id="E2" class="seat-style">E2</span>
+              <span class="seat-style">E1</span>
+              <span class="seat-style">E2</span>
               <span></span>
-              <span id="E3" class="seat-style">E3</span>
-              <span id="E4" class="seat-style">E4</span>
+              <span class="seat-style">E3</span>
+              <span class="seat-style">E4</span>
 
               <span class="font-medium text-lg">F</span>
-              <span id="F1" class="seat-style">F1</span>
-              <span id="F2" class="seat-style">F2</span>
+              <span class="seat-style">F1</span>
+              <span class="seat-style">F2</span>
               <span></span>
-              <span id="F3" class="seat-style">F3</span>
-              <span id="F4" class="seat-style">F4</span>
+              <span class="seat-style">F3</span>
+              <span class="seat-style">F4</span>
 
               <span class="font-medium text-lg">G</span>
-              <span id="G1" class="seat-style">G1</span>
-              <span id="G2" class="seat-style">G2</span>
+              <span class="seat-style">G1</span>
+              <span class="seat-style">G2</span>
               <span></span>
-              <span id="G3" class="seat-style">G3</span>
-              <span id="G4" class="seat-style">G4</span>
+              <span class="seat-style">G3</span>
+              <span class="seat-style">G4</span>
 
               <span class="font-medium text-lg">H</span>
-              <span id="H1" class="seat-style">H1</span>
-              <span id="H2" class="seat-style">H2</span>
+              <span class="seat-style">H1</span>
+              <span class="seat-style">H2</span>
               <span></span>
-              <span id="H3" class="seat-style">H3</span>
-              <span id="H4" class="seat-style">H4</span>
+              <span class="seat-style">H3</span>
+              <span class="seat-style">H4</span>
 
               <span class="font-medium text-lg">I</span>
-              <span id="I1" class="seat-style">I1</span>
-              <span id="I2" class="seat-style">I2</span>
+              <span class="seat-style">I1</span>
+              <span class="seat-style">I2</span>
               <span></span>
-              <span id="I3" class="seat-style">I3</span>
-              <span id="I4" class="seat-style">I4</span>
+              <span class="seat-style">I3</span>
+              <span class="seat-style">I4</span>
 
               <span class="font-medium text-lg">J</span>
-              <span id="J1" class="seat-style">J1</span>
-              <span id="J2" class="seat-style">J2</span>
+              <span class="seat-style">J1</span>
+              <span class="seat-style">J2</span>
               <span></span>
-              <span id="J3" class="seat-style">J3</span>
-              <span id="J4" class="seat-style">J4</span>
+              <span class="seat-style">J3</span>
+              <span class="seat-style">J4</span>
 
 
 
@@ -350,20 +350,21 @@
 
               <!-- booked title -->
               <div class="font-medium flex justify-between text-base">
-                <span>Seat <sup class="bg-[#1DD100] px-2 rounded-sm text-xs text-white">2</sup></span>
+                <span>Seat <sup id="booked-seat" class="bg-[#1DD100] px-2 rounded-sm text-xs text-white">0</sup></span>
                 <span>Class</span>
                 <span>Price</span>
               </div>
 
               <!-- booked seats -->
-              <div class="font-medium flex justify-between text-base clr-secondary border-b-2 pb-4">
-
+              <div id="booked-seat-container" class="font-medium text-base clr-secondary border-b-2 pb-4 mt-4 space-y-4">
+              
+                
 
               </div>
               <!-- total Price -->
               <div class="font-medium flex justify-between text-base mt-4">
                 <span>Total Price</span>
-                <span>BDT 0.00</span>
+                <span id="total-price">BDT 0.00</span>
               </div>
 
               <!-- coupon input -->
@@ -412,9 +413,7 @@
             </div>
 
           </div>
-
-
-
+        </section>
       </div>
 
       </div>
@@ -425,8 +424,9 @@
     </div>
     </section>
 
-  </main>
+    
 
+  </main>
 
   <!-- footer
   ================ -->

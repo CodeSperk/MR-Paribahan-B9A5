@@ -24,12 +24,6 @@
 }
 
 /* backgrounds */
-.bold-bg{
-  background-color: #1DD100;
-}
-.light-bg{
-  background-color: #1dd10026;
-}
 .seat-style{
   grid-column:span 2;
   background-color: #F7F8F8;
@@ -38,12 +32,18 @@
   border-radius: 10px;
   padding: 12px 24px;
   cursor: pointer;
-
 }
 .seat-style:hover{
-  background-color: #cafac3;
-  color:#1DD100;
+  background-color: #1DD100;
 }
+.bold-bg{
+  background-color: #1DD100;
+}
+.light-bg{
+  background-color: #1dd10026;
+}
+
+
 @media only screen and (max-width: 1023px) {
   .seat-style{
     font-weight: 500;
