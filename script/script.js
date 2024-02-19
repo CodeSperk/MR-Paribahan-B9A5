@@ -127,6 +127,25 @@ for (let seat of seats) {
 }
 
 
+//to display modal
+function handleSubmit() {
+  //to validate phone number with 11 digit starts with 01
+  const phoneNumber = getElValue('p-number').trim();
+  const validNumber = phoneNumber.startsWith('01');
+
+  //validate name
+  var nameInput = document.getElementById('client-name');
+  
+  if (nameInput.value.trim() === '') {
+    alert('Please enter your name.');
+  }else if(phoneNumber.length<11 || !validNumber){
+    alert('Please Provide a valid Number');
+  }else {
+      success.showModal(); 
+  }
+}
+
+
 //to reset when click on the modal button
 const modalEl = getElById('modal-btn');
 modalEl.addEventListener('click', function(){

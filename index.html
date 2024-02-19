@@ -393,30 +393,34 @@
 
             </div>
 
-            <div class="mt-6 text-start">
-              <!-- Passengers Name -->
-              <label for="name" class="font-semibold">Passengers Name*</label>
-              <input type="text" placeholder="Enter your name" id="client-name" name="name"
-                class="w-full p-4 border mt-4 rounded-xl text-base">
-            </div>
+            <form class="text-start" onsubmit="return false;">
+             
+                <!-- Passengers Name -->
+                <label for="name" class="font-semibold">Passengers Name*</label>
+                <input type="text" placeholder="Enter your name" id="client-name" name="name"
+                  class="w-full p-4 border mt-4 rounded-xl text-base mb-6" required>
+           
+  
+              <!-- Phone Number -->
+             
+                <label for="number" class="font-semibold">Phone Number*</label>
+                <input type="number" placeholder="Enter your phone number" id="p-number" name="number"
+                  class="w-full p-4 border mt-4 rounded-xl text-base mb-6" requited>
+            
+  
+              <!-- Email ID -->
+                <label for="email" class="font-semibold ">Email ID</label>
+                <input type="email" placeholder="Enter your email id" id="client-email" name="email"
+                  class="w-full p-4 border mt-4 rounded-xl text-base">
 
-            <!-- Phone Number -->
-            <div class="text-start mt-6">
-              <label for="number" class="font-semibold">Phone Number*</label>
-              <input type="number" placeholder="Enter your phone number" id="p-number" name="number"
-                class="w-full p-4 border mt-4 rounded-xl text-base">
-            </div>
-
-            <!-- Email ID -->
-            <div class="text-start mt-6">
-              <label for="email" class="font-semibold ">Email ID</label>
-              <input type="email" placeholder="Enter your email id" id="client-email" name="email"
-                class="w-full p-4 border mt-4 rounded-xl text-base">
-            </div>
-
-            <button onclick="success.showModal()" id="next-btn"
-              class="bg-[#1DD100] text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl enabled:hover:bg-green-600 disabled:bg-opacity-30"
-              disabled>Next</button>
+              <div onclick="handleSubmit()">
+                <input type="submit" value="Next"  id="next-btn"
+                class="bg-[#1DD100] text-white p-4 font-raleway lg:text-lg font-bold mt-6 w-full rounded-xl enabled:hover:bg-green-600 disabled:bg-opacity-30"
+                disabled>
+              </div>
+          
+             
+            </form>
 
             <!-- terms & conditions -->
             <div class="flex justify-around mt-6 clr-secondary">
