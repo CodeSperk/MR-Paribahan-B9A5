@@ -19,7 +19,7 @@
 <body class="clr-primary font-inter text-sm lg:text-base">
   <!-- header
   =============== -->
-  <header class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14">
+  <header class="max-w-7xl mx-auto px-0 md:px-10 xl:px-14">
     <!-- navbar
     ------------ -->
     <nav class=" mt-8 lg:mt-12 mb-6 lg:mb-10 font-raleway">
@@ -61,13 +61,13 @@
     <!-- banner Section 
     --------------------------->
     <section class="relative z-0">
-      <img src="./resources/banner.png" alt="" class="w-full min-h-[300px]">
+      <img src="./resources/banner.png" alt="" class="w-full min-h-[320px] rounded-[20px]">
       <div
-        class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-20 rounded-[30px]">
+        class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-20 rounded-[20px]">
         <div class="text-center px-4 lg:px-8">
           <h1 class="text-4xl lg:text-5xl font-raleway font-extrabold text-white leading-snug lg:leading-snug">Travel
             Seamlessly with <br> <span class="clr-bold">MR Paribahan</span></h1>
-          <p class="text-base lg:text-lg text-white mt-2 max-w-[590px] mx-auto">Effortlessly explore your destinations
+          <p class="text-sm lg:text-lg text-white mt-2 max-w-[590px] mx-auto">Effortlessly explore your destinations
             with MR Paribahan, ensuring a smooth and seamless travel experience for all your journeys.</p>
           <a href="#paribahan-section">
             <button
@@ -175,14 +175,14 @@
 
     <!-- Paribahan Section 
     ------------------------ -->
-    <section class="bg-[#F7F8F8] rounded-t-[60px] max-w-[1440px] mx-auto py-20 mt-20 lg:mt-28">
+    <section class="bg-[#F7F8F8] rounded-t-[36px] lg:rounded-t-[60px] max-w-[1440px] mx-auto py-20 mt-20 lg:mt-28">
       <div class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14 text-center" id="paribahan-section">
         <h2 class="font-raleway text-4xl font-bold">MR Paribahan</h2>
         <p class="clr-secondary md:text-lg max-w-3xl mx-auto mt-4 p-4 md:p-10">Purchase your tickets hassle-free from
           the MR Paribahan section, your go-to destination for convenient and reliable bus ticket bookings.</p>
 
         <!-- coach details and per ticket Price section added -->
-        <section class="bg-white flex rounded-2xl">
+        <section class="bg-white lg:flex rounded-2xl">
           <!-- Coach Details -->
           <div class="flex-1 p-4 lg:p-8">
             <div class="flex justify-between">
@@ -202,7 +202,9 @@
                 <img src="./resources/seat-green.png" alt="">
                 <p><span id="remaining-seat">40</span> Seats left</p>
               </div>
+
             </div>
+
             <div class="bg-[#F7F8F8] p-4 md:p-6 lg:p-8 mt-6 lg:text-lg font-medium clr-secondary font-raleway">
               <div class="flex justify-between border-b-2 border-dashed pb-5">
                 <p>Route</p>
@@ -226,9 +228,9 @@
 
 
           <!-- Per ticket Price -->
-          <div class="flex w-1/3 md:w-1/4 items-center justify-center pr-4 lg:pr-10">
-            <img src="./resources/info-devider.png" alt="" class="w-6 md:w-12 h-full">
-            <div class="flex items-center justify-center lg:pl-4 py-10">
+          <div class="lg:flex  lg:w-1/3 ">
+            <img src="./resources/info-devider.png" alt="" class="w-6 md:w-12 h-full hidden lg:flex">
+            <div class="flex-1 flex items-center justify-center py-10">
               <div>
                 <img src="./resources/fare.png" alt="" class="w-6 md:w-12 mx-auto">
                 <h4 class="text-xl md:text-2xl xl:text-3xl font-bold">550 Taka</h4>
@@ -240,7 +242,7 @@
 
 
         <!-- Seat selection section -->
-        <section class="bg-white rounded-2xl p-4 lg:p-8  mt-6 flex flex-col md:flex-row justify-between gap-4 lg:gap-8">
+        <section class="bg-white rounded-2xl p-4 lg:p-8  mt-6 flex flex-col md:flex-row justify-between gap-8 lg:gap-8">
           <div class="flex-1">
             <h4 class="text-xl md:text-2xl font-semibold clr-primary border-b-2 border-dashed pb-6 text-start">Select
               Your Seat</h4>
@@ -343,7 +345,7 @@
           <!-- cart
 ------------- -->
           <div class="md:pl-4 lg:pl-8 md:w-2/5 md:border-l-2 border-dashed">
-            <h4 class="text-xl md:text-2xl font-semibold clr-primary border-b-2 border-dashed pb-6 text-start">Select
+            <h4 class="text-xl md:text-2xl font-semibold clr-primary border-b-2 border-dashed pb-6 text-start">Confirm
               Your Seat</h4>
 
             <div class="bg-[#F7F8F8] mt-6 p-4 lg:p-8">
@@ -465,7 +467,7 @@
   ================ -->
   <footer class="bg-[#030712] py-20 lg:py-28 ">
     <div class="max-w-7xl mx-auto px-5 md:px-10 xl:px-14 text-white">
-      <div class="flex justify-between border-b-2 border-dashed pb-6 lg:pb-10">
+      <div class="md:flex gap-8 justify-between border-b-2 border-dashed pb-10 space-y-6">
         <div class="">
           <h2 class="text-3xl md:text-4xl">E-Ticket</h2>
           <p class="opacity-80 md:text-lg mt-4">E-Ticket: Enhancing Your Daily Commute <br> through Digital Innovation.
@@ -479,13 +481,13 @@
       </div>
 
       <!-- bottom part -->
-      <div class="mt-6 lg:mt-8 md:flex flex-row-reverse justify-between">
-        <div class="flex gap-4 font-medium">
+      <div class="mt-10 md:flex space-y-8 flex-row-reverse justify-between items-center">
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 font-medium">
           <a href="#" class="hover:text-slate-300">Terms & Conditions</a>
           <a href="#" class="hover:text-slate-300">Return & refund policy</a>
           <a href="#" class="hover:text-slate-300">Privacy policy</a>
         </div>
-        <p class="opacity-70 text-center mt-6 md:mt-0 md:text-start"> @all rights reserved, E-Ticket services
+        <p class="opacity-70 text-center md:text-start"> @all rights reserved, E-Ticket services
           limited.2024</p>
       </div>
     </div>
